@@ -15,6 +15,12 @@ while cont != 0:
     print("\nEscolha a operação que deseja realizar: ", end="\n\n")
     matriz.mostrar_menu()
     operacao = int(input())
+
+    while operacao < 0:
+        print("Opção inválida, ecolha uma das opções do menu: ", end="\n\n")
+        matriz.mostrar_menu()
+        operacao = int(input())
+
     print("")
     cont = operacao
     if operacao != 0: operacoes[operacao]()
