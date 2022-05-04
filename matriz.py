@@ -18,12 +18,18 @@ class Matriz:
         print("")
 
     def mostrar_transposta(self):
-        # Mostrar matriz transposta
-        pass
+        matriz_tranposta = list(map(list,zip(*self.matriz)))
+        for row in matriz_tranposta:
+            for number in row:
+                print(number, end=" ")
+            print("")
+    
 
     def soma_diagonal_princial(self):
-        # Soma diagonal principal
-        pass
+        matriz = self.matriz
+        soma = matriz[0][0] + matriz[1][1] + matriz[2][2] + matriz[3][3]
+        print(soma)
+
 
     def numeros_pares(self):
         print("Números pares: ", end="")
