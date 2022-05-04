@@ -18,8 +18,8 @@ class Matriz:
         print("")
 
     def mostrar_transposta(self):
-        # Mostrar matriz transposta
-        pass
+        matriz_tranposta = list(map(list,zip(*self.matriz)))
+        return matriz_tranposta
 
     def soma_diagonal_princial(self):
         # Soma diagonal principal
