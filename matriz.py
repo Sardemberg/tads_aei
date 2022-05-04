@@ -19,7 +19,11 @@ class Matriz:
 
     def mostrar_transposta(self):
         matriz_tranposta = list(map(list,zip(*self.matriz)))
-        return matriz_tranposta
+        for row in matriz_tranposta:
+            for number in row:
+                print(number, end=" ")
+            print("")
+    
 
     def soma_diagonal_princial(self):
         soma=[]
@@ -34,7 +38,7 @@ class Matriz:
                elif(numero==self.matriz[3][3]):
                    soma.append(numero)    
         soma_d=sum(soma)
-        return soma_d
+        print(soma_d) 
 
 
     def numeros_pares(self):
