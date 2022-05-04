@@ -22,8 +22,20 @@ class Matriz:
         return matriz_tranposta
 
     def soma_diagonal_princial(self):
-        # Soma diagonal principal
-        pass
+        soma=[]
+        for l in self.matriz:
+           for numero in l:
+               if(numero==self.matriz[0][0]):
+                   soma.append(numero)
+               elif(numero== self.matriz[1][1]):
+                   soma.append(numero) 
+               elif(numero==self.matriz[2][2]):
+                   soma.append(numero) 
+               elif(numero==self.matriz[3][3]):
+                   soma.append(numero)    
+        soma_d=sum(soma)
+        return soma_d
+
 
     def numeros_pares(self):
         print("Números pares: ", end="")
