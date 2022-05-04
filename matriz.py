@@ -26,19 +26,9 @@ class Matriz:
     
 
     def soma_diagonal_princial(self):
-        soma=[]
-        for l in self.matriz:
-           for numero in l:
-               if(numero==self.matriz[0][0]):
-                   soma.append(numero)
-               elif(numero== self.matriz[1][1]):
-                   soma.append(numero) 
-               elif(numero==self.matriz[2][2]):
-                   soma.append(numero) 
-               elif(numero==self.matriz[3][3]):
-                   soma.append(numero)    
-        soma_d=sum(soma)
-        print(soma_d) 
+        matriz = self.matriz
+        soma = matriz[0][0] + matriz[1][1] + matriz[2][2] + matriz[3][3]
+        print(soma)
 
 
     def numeros_pares(self):
